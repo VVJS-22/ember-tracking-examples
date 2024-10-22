@@ -1,0 +1,5 @@
+{{page-title "Start"}}
+<StartHome @greeting={{this.model.greeting}} @greet={{this.model.greet}} @changeData={{this.changeData}}/>
+<LinkTo @route="start" @model="Hi" @query={{hash greet="How are you?"}}>Say Hi</LinkTo>
+<LinkTo @route="start" @model="Hello" @query={{hash greet="What's happen"}}>Say Hello</LinkTo>
+<div>{{this.isChangesGreet}}</div>

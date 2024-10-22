@@ -1,0 +1,2 @@
+<GreetingCard @greeting={{this.greeting}} @greet={{@greet}} @changeData={{this.changeData}} />
+<button type="button" {{on "click" (fn this.changeData "Good Morning" "Have a nice day")}}>Change Greeting</button>
